@@ -16,6 +16,9 @@ Users can add "*trains*" with different sets of data to a database of train.  Th
 * none so far
 
 ### To do:
-- [ ] Make "**Next Arrival**" and "**Minutes Away**" displays dynamic to update by the minute.
-- [ ] Allow users to edit/delete train data that is already stored in database using a button for each appended train in the table.
-- [ ] Restrict editors/users to Firebase accounts.
+- [ ] Add css styling for table text centering, other display alterations.
+- [ ] Add image and link to Portfolio.
+  ### *Extras*:
+  - [ ] Make "**Next Arrival**" and "**Minutes Away**" displays dynamic to update by the minute.
+  - [ ] Allow users to edit/delete train data that is already stored in database using a button for each appended train in the table.
+  - [ ] Restrict editors/users to Firebase accounts.
