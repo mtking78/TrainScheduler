@@ -45,6 +45,12 @@ $("#add-train").on("click", function(event) {
 
     // Test to see if newTrain data was collected.
     console.log(newTrain);
+
+    // Clear input text
+    $('#name-input').val("");
+    $('#destination-input').val("");
+    $('#frequency-input').val("");
+    $("#time-input").val("");
 });
 //-------------------------------------------------------------------//
 
@@ -95,7 +101,7 @@ database.ref("/newTrainData").on("child_added", function(childSnapshot) {
     // Add each train's data into the table.
     $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDestination + "</td><td>" +
     trainFrequency + "</td><td>" + nextArrival + "</td><td>" + minutesAway + "</td><td>");
-
+    $("#test").html(minutesAway);
 }, function(errorObject) {
 // If any errors are experienced, log them to console.
 console.log("The read failed: " + errorObject.code);
@@ -107,8 +113,6 @@ function update() {
 }
 setInterval(update, 1000);
 
-
-
 // Test function to demonstrate how to avoid Moment mutability.
 // function funct (){
 //     var today = moment();
@@ -118,3 +122,9 @@ setInterval(update, 1000);
 //     console.log(tomorrow);
 //     console.log(today);
 // }
+
+//Consider updating your "minutes to arrival" and "next train time" text once every minute.
+//Try adding update and remove buttons for each train. Let the user edit the row's elements.
+//Allow them to change a train's Name, Destination and Arrival Time (and then, by relation, minutes to arrival).
+//Make it so that only users who log into the site with their Google or GitHub accounts can use your site.
+//You'll need to read up on Firebase authentication for this bonus exercise.

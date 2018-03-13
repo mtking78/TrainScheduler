@@ -1,0 +1,30 @@
+.jumbotron {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Exo', sans-serif;
+    color: #fff;
+}
+
+.well {
+    background-color: rgb(51, 122, 183);
+}
+
+.well-sm {
+    width: fit-content;
+    text-align: center;
+}
+
+h2 {
+    /* font-family: 'Luckiest Guy', cursive; */
+    text-shadow: 5px 5px 5px black;
+    color: #fff;
+}
+
+#time {
+    float: right;
+}
+
+th, td {
+    text-align: center;
+}

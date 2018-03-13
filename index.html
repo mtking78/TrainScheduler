@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Train Scheduling</title>
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <!-- Link to Moment.js should go here -->
+        <!-- Styling -->
+        <link href="https://fonts.googleapis.com/css?family=Exo:600i,700i" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Moment.js -->
         <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
         <!-- Firebase Reference -->
         <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
@@ -14,8 +17,12 @@
         <div class="container">
             <br>
             <div class="jumbotron">
-                <h1 class="text-center">Anytime is Train Time</h1>
-                <h1 class="text-center" id="time"></h1>
+                <div class="well">
+                    <h2 class="text-center">Train Time Schedule</h2>
+                </div>
+                <!-- <div class="well well-sm">
+                    <h3 class="text-center" id="time"></h3>
+                </div> -->
             </div>
 
             <div class="row">
@@ -24,7 +31,7 @@
                 <div class="col-lg-6">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Current Train Schedule</h3>
+                            <h3 class="panel-title">Current Train Schedule<span id="time"></span></h3>
                         </div>
 
                         <div class="panel-body" id="recent-train">
@@ -77,7 +84,7 @@
                                     <label for="frequency-input">Frequency (min)</label>
                                     <input class="form-control" id="frequency-input" type="number">
                                 </div>
-                            <button class="btn btn-primary" id="add-train" type="submit">Submit</button>
+                            <button class="btn btn-primary" id="add-train" type="submit">Add Train</button>
                             </form>
                         </div>
                     </div>
